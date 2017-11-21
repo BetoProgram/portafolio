@@ -7,6 +7,7 @@ import { APP_ROUTING } from './app.routes';
 
 //Servicios
 import { InformacionService } from './services/informacion.service';
+import { ProductosService } from './services/productos.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -29,7 +30,7 @@ import { AboutComponent,HomeComponent,ProductComponent } from './components/inde
     HttpModule,
     APP_ROUTING
   ],
-  providers: [ InformacionService ],
+  providers: [ InformacionService, ProductosService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
