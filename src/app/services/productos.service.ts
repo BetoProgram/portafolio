@@ -14,9 +14,12 @@ export class ProductosService {
     if(this.productos.length===0){
       this.http.get("https://portafolio-5ea28.firebaseio.com/productos_idx.json")
       .subscribe(data=>{
-        this.productos=data.json();
-        console.log(this.productos);
-        this.cargando = false;
+        
+        setTimeout(()=>{
+          this.cargando = false;
+          this.productos=data.json();
+        },3000);
+        
       })
     }
   }
