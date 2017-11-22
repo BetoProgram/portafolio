@@ -5,7 +5,7 @@ import { AboutComponent,HomeComponent,ProductComponent } from './components/inde
 const APP_ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent }, 
-    { path: 'product', component: ProductComponent }, 
+    { path: 'product/:id', component: ProductComponent }, 
     { path: '**', pathMatch:'full',redirectTo:'home' },
 ];
 
