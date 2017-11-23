@@ -13,8 +13,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
-import { AboutComponent,HomeComponent,ProductComponent } from './components/index.pages';
-
+import { AboutComponent,HomeComponent,ProductComponent,SearchComponent } from './components/index.pages';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,8 @@ import { AboutComponent,HomeComponent,ProductComponent } from './components/inde
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    ProductComponent
+    ProductComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

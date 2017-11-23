@@ -8,11 +8,13 @@ import { ProductosService } from '../../services/productos.service';
 })
 export class ProductComponent implements OnInit {
   producto:any = {};
+  cod:number = 0;
 
   constructor(private route:ActivatedRoute, private _ps:ProductosService) { 
     route.params.subscribe(param=>{
       _ps.cargar_productosId(param['id'])
       .subscribe(res=>{
+        this.cod = param['id'];
         this.producto = res.json();
       })
     });
