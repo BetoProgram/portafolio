@@ -5,8 +5,8 @@ import { AboutComponent,HomeComponent,ProductComponent,SearchComponent } from '.
 const APP_ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
-    { path: 'search', component: SearchComponent }, 
-    { path: 'product/:termino', component: ProductComponent }, 
+    { path: 'search/:termino', component: SearchComponent }, 
+    { path: 'product/:id', component: ProductComponent }, 
     { path: '**', pathMatch:'full',redirectTo:'home' },
 ];
 
